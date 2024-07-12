@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>User Registration</title>
+    </head>
+
+    <body>
+        <h1>User Registration</h1>
+        <form method="post"> 
+            <table>
+            {{form.as_table}} 
+            {% comment %} every element in the form will be accessed as a table {% endcomment %}
+            {% csrf_token %}
+        </table>
+<br/>
+        <input type="submit" name="" value="Submit" />
+
+        </form>
+    </body>
+
+</html>
