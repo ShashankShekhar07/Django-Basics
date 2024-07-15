@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Update Student</title>
+    </head>
+
+    <body>
+    <h1>Update Student:</h1>
+    <form method="post">
+        {%csrf_token%}
+        {% comment %} First Name: <input type="text" name="firstName" value="{{student.firstName}}"/><br/><br/>
+        Last Name: <input type="text" name="lastName" value="{{student.lastName}}"/><br/><br/>
+        Test Score: <input type="text" name="testScore" value="{{student.testScore}}"/><br/><br/> {% endcomment %}
+        <table>
+            {{form.as_table}}
+        </table>
+        <input type="submit" value="Update"/>
+    </form>   
+
+    </body>
+</html>
